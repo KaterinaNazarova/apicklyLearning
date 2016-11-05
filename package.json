@@ -1,0 +1,17 @@
+{
+  "name": "autotesting",
+  "version": "1.0.0",
+  "description": "Установка окружения",
+  "main": "conf.js",
+  "scripts": {
+    "install-env": "npm install protractor -g && webdriver-manager update && webdriver-manager update --ie32",
+    "wm-start": "webdriver-manager start",
+    "test": "protractor conf.js"
+  },
+  "author": "Ekaterina Nazarova",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "jasmine2-custom-message": "^0.8.2",
+    "protractor-jasmine2-screenshot-reporter": "^0.3.2"
+  }
+}
